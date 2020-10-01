@@ -4,11 +4,14 @@ body
 {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    display: block;
 }
 .container 
 {
-    max-width: 1350px;
+    max-width: 1400px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /*HEADER*/
