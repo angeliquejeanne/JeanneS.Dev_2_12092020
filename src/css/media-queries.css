@@ -73,8 +73,8 @@
     .headertitle 
     {
         order: 3;
-        margin: 20px 100px 0 ;
-        }
+        margin: 20px 0 0 ;
+    }
     .headertitle h2 
     {
         font-size: 20px;
@@ -82,9 +82,16 @@
     .headertitle p
     {
         font-size: 14px;
+        margin: 10px 50px 10px ;
     }
 }
-
+@media all and (min-width: 375px) and (max-width: 767px) 
+{
+    .headertitle h2
+    {
+        margin: 20px 50px 0;
+    }
+}
 @media all and (max-width: 1200px)
 {
     .search-filter
