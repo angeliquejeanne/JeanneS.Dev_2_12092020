@@ -135,10 +135,17 @@ p
     color: white;
     font-size: 1rem;
     font-weight: 700;
+    text-align: center;
+    padding: 1%;
+}
+.btnseearch span{
+z-index: 1;
+}
 }
 .btnsearch .fa-search
 {
     visibility: hidden;
+    z-index: 0;
 }
 .btnsearch:hover 
 {
