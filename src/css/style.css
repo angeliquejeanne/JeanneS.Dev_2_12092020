@@ -138,10 +138,7 @@ p
     text-align: center;
     padding: 1%;
 }
-.btnseearch span{
-    text-align: center;
-}
-}
+
 .btnsearch .fa-search
 {
     visibility: hidden;
