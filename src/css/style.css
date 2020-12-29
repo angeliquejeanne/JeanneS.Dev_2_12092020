@@ -139,13 +139,12 @@ p
     padding: 1%;
 }
 .btnseearch span{
-z-index: 1;
+    text-align: center;
 }
 }
 .btnsearch .fa-search
 {
     visibility: hidden;
-    z-index: 0;
 }
 .btnsearch:hover 
 {
