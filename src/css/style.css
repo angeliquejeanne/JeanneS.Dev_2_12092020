@@ -30,6 +30,7 @@ nav
     justify-content: flex-end;
     list-style-type: none;
     margin-top: 20px;
+    margin-left: -30px;
 }
 nav li 
 {
