@@ -56,7 +56,8 @@ nav li a
 header nav p 
 {
     padding: 0;
-    margin: 0 30px;
+    margin: 0;
+    margin-left: 34px;
     padding-top: 16px;
     position: relative;
 }
