@@ -121,11 +121,11 @@
     }
     .btnsearch span
     {
-        visibility: hidden;
+        display: none;
     }
     .btnsearch .fa-search
     {
-        visibility: visible;
+        display: block;
         padding-bottom: 15px;
         color: white;
     }
