@@ -100,7 +100,7 @@
     }
     .search-bar 
     {
-        margin: 5px 40px 0 40px;
+        margin:0;
     }  
     .city 
     {
@@ -126,7 +126,6 @@
     .btnsearch .fa-search
     {
         display: block;
-        padding-bottom: 15px;
         color: white;
     }
     .btnsearch .fa-search:hover 
