@@ -1,113 +1,103 @@
 /*Header*/
-@media all and (max-width: 1200px)
-{
-    header img
-    {
-        padding: 0 !important;
+@media (min-width:769px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
     }
+
+}
+@media screen and (max-width: 768px)
+{
     header 
     {
         justify-content: space-between;
         align-items: center;
         margin-top: 30px;
     }
-    header img 
+
+    header img
     {
+        padding: 0 !important;
         margin-left: 40px;
     }
-    nav 
+    header nav 
     {
         flex-basis: 100%;
         order: 2;
         display: flex;
+        position: relative;
     }
-    nav li 
+    header nav ul li 
     {
-        width: 80px;
         border-top: none;
+        width: 50%;
         text-align: center;
+        padding: 10px 0 10px 8%;
     }
-    nav ul li 
-    {
-        width: 48%;
-        text-align: center;
-        padding: 16px 0;
-        border-bottom: 3px solid #f2f2f2;
-    }
-    nav ul .li-lod a, nav ul .li-act a
+    header nav ul .li-lod a, header nav ul .li-act a
     {
         text-align: center;
         justify-content: space-between;
     }
-    nav ul .li-lod a
+    header nav ul .li-lod a
     {
         padding-right: 80px;
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
-    nav ul .li-act a
+    header nav ul .li-act a
     {
         padding-right: 40px;
     }
-    nav ul li:hover 
+    header nav ul li a:hover 
     {
         border-bottom: solid 3px #0065fc;
     }
-    nav ul li a:hover 
+    header nav ul li a:hover 
     {
-        border-top: hidden;
+        border-top: none;
     }
-    nav li a 
+    header nav li a 
     {
         margin-right: 30px;
         padding-left: 50px;
     }
-    header nav 
-    {
-        position: relative;
-    }
     header nav p 
     {
         position: absolute;
-        top: -65px;
+        top: -60px;
+        padding: 0px 25px 0px 0;
     }
-    .headertitle 
+    header .headertitle 
     {
         order: 3;
         margin: 20px 0 0 ;
         text-align: center;
     }
-    .headertitle h2 
+    header .headertitle h2 
     {
         font-size: 20px;
     }
-    .headertitle p
+    header .headertitle p
     {
         font-size: 14px;
         margin: 10px 50px 10px ;
     }
 }
-@media all and (min-width: 375px) and (max-width: 767px) 
-{
-    .headertitle h2
-    {
-        margin: 20px 50px 0;
-    }
-}
-@media all and (max-width: 1200px)
+@media all and (max-width: 960px)
 {
     .search-filter
     {
         margin: 5px 5px 5px 5px;
     }
-    .search-bar 
+    .search-filter .search-bar 
     {
         margin:0;
     }  
-    .city 
+    .search-filter .search-bar .city 
     {
         width: 190px;
     }
-    .btnsearch 
+    .search-filter .search-bar .btnsearch 
     {
         display: block;
         width: 51px;
@@ -120,16 +110,17 @@
         background-color: #0065fc;
         color: white;
     }
-    .btnsearch span
+    .search-filter .search-bar .btnsearch span
     {
         display: none;
     }
-    .btnsearch .fa-search
+    .search-filter .search-bar .btnsearch .fa-search 
     {
         display: block;
+        visibility: visible;
         color: white;
     }
-    .btnsearch .fa-search:hover 
+    .search-filter .btnsearch .fa-search:hover 
     {
         color: #0065fc;
         background-color: #deebff;
@@ -150,7 +141,7 @@
     }
 }
 
-@media all and (min-width: 375px) and (max-width: 767px) 
+@media all and (min-width: 320px) and (max-width: 767px) 
 {
     .filter
     {
@@ -161,7 +152,12 @@
 }
 
 /*section lodging*/
-@media all and (max-width: 1200px)
+@media screen and (max-width: 768px) {
+    .results h2 {
+        font-size: 22px;
+    }
+}
+@media all and (max-width: 1024px)
 {
     small 
     {
@@ -267,18 +263,18 @@
     }
 }
 
-@media all and (min-width: 375px) and (max-width: 767px) 
+@media all and (min-width: 320px) and (max-width: 767px) 
 {
     .popular
     {
-        padding: 40px 20px;
-        width: max-content;
-        margin: auto;
+        /* padding: 40px 20px; */
+        width: auto;
+        margin: 0;
     }
     .resultscontainer
     {
         margin: 0;
-        padding-left: 12px;
+        /* padding-left: 12px; */
     }
     .cardpopular 
     {
@@ -286,7 +282,7 @@
     }
     .popular .fa-chart-line 
     {
-        margin-left: 100px;
+        margin-left: 30px;
     }
     .imgmain 
     {
@@ -340,12 +336,12 @@
     }
 }
  
-@media all and (min-width: 375px) and (max-width: 767px) 
+@media all and (min-width: 320px) and (max-width: 767px) 
 {
-    .contentActivities
+    /* .contentActivities
     {
         padding-left: 20px;
-    }
+    } */
     .pic-activity 
     {
         width: 318px;
@@ -353,7 +349,7 @@
 }
 
 /*Footer*/
-@media all and (max-width: 1200px)
+@media all and (max-width: 1024px)
 {
     .footercontent 
     {
@@ -370,7 +366,7 @@
         padding-bottom: 0;
     } 
 }
-@media all and (min-width: 768px) and (max-width: 1200px)
+@media all and (min-width: 1200px)
 {
     .footercontent 
     {
@@ -378,7 +374,7 @@
         justify-content: space-around;
     }
 }
-@media all and (min-width: 375px) and (max-width: 767px) 
+@media screen and (max-width: 767px) 
 {
     footer
     {
