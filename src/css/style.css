@@ -11,22 +11,21 @@ body
     height: 100vh;
 
     margin: 0;
+    padding: 0;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
     display: block;
-    background-color: lightgrey;
 }
 .container 
 {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1480px;
     margin: 0 auto;
 }
 
 /*HEADER Partie Nav et Title*/
 header 
 {
-    display: flex;
     flex-wrap: wrap;
 }
 header img 
@@ -155,7 +154,7 @@ header .headertitle p
 
 .search-filter .search-bar .btnsearch .fa-search
 {
-    visibility: hidden;
+    
     display: none;
 }
 .search-filter .search-bar .btnsearch:hover 
@@ -245,7 +244,7 @@ header .headertitle p
 }
 .results 
 {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .results small 
 {
@@ -373,7 +372,7 @@ header .headertitle p
 }
 .popular .fa-chart-line 
 {
-    margin-left: 118px;
+    margin-left: 75px;
 }
 .popular .containercard 
 {
@@ -498,7 +497,7 @@ footer
 }
 .footercontent 
 {
-    max-width: 1350px;
+    max-width: 1380px;
     margin: auto;
     display: flex;
 }
