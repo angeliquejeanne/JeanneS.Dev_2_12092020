@@ -1,20 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 
-
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body 
 {
+    width: 100%;
+    height: 100vh;
+
     margin: 0;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
     display: block;
+    background-color: lightgrey;
 }
 .container 
 {
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-/*HEADER*/
+/*HEADER Partie Nav et Title*/
 header 
 {
     display: flex;
@@ -22,18 +31,18 @@ header
 }
 header img 
 {
-    padding: 48px 0;
+    padding: 30px 0px 40px 10px;
 }
-nav 
+header nav 
 {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: -30px;
 }
-nav li 
+header nav li 
 {
     list-style-type: none;
     float: left;
@@ -41,7 +50,7 @@ nav li
     font-weight: bold;
     padding-left: 30px;
 }
-nav li a 
+header nav li a 
 {
     color: black;
     text-decoration: none;
@@ -52,8 +61,8 @@ header nav p
 {
     padding: 0;
     margin: 0;
-    margin-left: 34px;
-    padding-top: 15px;
+    margin-left: 35px;
+    padding: 0px 10px 0 0;
     position: relative;
 }
 header nav p a 
@@ -72,24 +81,27 @@ header nav p a:hover
     color: black;
     border-top: solid 1px #0065fc;
 }
-nav ul li a:hover 
+header nav ul li a:hover 
 {
     border-top: solid 1px #0065fc;
     padding-top: 20px;
 }
-h2 
-{
-    font-size: 1.25rem;
-    margin: 0;
-}
-p 
-{
-    font-size: 0.8rem;
-}
-.headertitle 
+header .headertitle 
 {
     flex-basis: 100%;
+    width: 100%;
 }
+header .headertitle  h2 
+{
+    font-size: 1.25rem;
+    margin: 10px 0px;
+}
+header .headertitle p 
+{
+    margin: 10px 0px;
+    font-size: 0.8rem;
+}
+
 
 
 /* Search*/
@@ -98,12 +110,12 @@ p
 {
     margin-bottom: 35px;
 }
-.search-bar 
+.search-filter .search-bar 
 {
     display: flex;
     margin-bottom: 3%;
 }
-.fa-map-marker-alt 
+.search-filter .search-bar .fa-map-marker-alt 
 {
     padding: 16.5px 10px;
     background-color: #f2f2f2;
@@ -111,7 +123,7 @@ p
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-.city 
+.search-filter .search-bar .city 
 {
     width: 234px;
     height: 51px;
@@ -124,7 +136,7 @@ p
     list-style-type: none;
     text-decoration: none;
 }
-.btnsearch 
+.search-filter .search-bar .btnsearch 
 {
     background: transparent;
     border: none;
@@ -141,12 +153,12 @@ p
     padding: 1%;
 }
 
-.fa-search
+.search-filter .search-bar .btnsearch .fa-search
 {
     visibility: hidden;
     display: none;
 }
-.btnsearch:hover 
+.search-filter .search-bar .btnsearch:hover 
 {
     color: #0065fc;
     background-color: #deebff;
@@ -155,17 +167,18 @@ p
 }
 
 /* Filtres*/
-.filter 
+.search-filter .filter 
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.filter h3 
+.search-filter .filter h3 
 {
-    margin-right: 32px;
+    margin-right: 35px;
+    padding: 15px 0px 15px 5px;
 }
-.filter button 
+.search-filter .filter button 
 {
     display: flex;
     align-items: center;
@@ -180,7 +193,7 @@ p
     outline: none;
     cursor: pointer;
 }
-.filter .icon 
+.search-filter .filter button .icon 
 {
     display: flex;
     height: 50px;
@@ -193,12 +206,12 @@ p
     border-radius: 50px;
     color: #0065fc;
 }
-.filter button:hover .icon 
+.search-filter .filter button:hover .icon 
 {
     color: black;
     background-color: #deebff;
 }
-.filter button:hover 
+.search-filter .filter button:hover 
 {
     background-color: #0065fc;
     color: white;
